@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Whale sonar v.1.0 beta</title>
+        <title>Whale Sonar v.1.0.1 beta</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Cache-control" content="no-cache">
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Expires" content="-1">
         <script type="text/javascript" src="./js/jquery311.min.js"></script>        
+        <script type="text/javascript" src="./js/cookie.min.js"></script>        
         <script src="./js/steem.min.js"></script>
         <script src="./js/main.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/styles.min.css"/>
     </head>
     <body>
         <div class="settings-box">
-            <h3>WHALE SONAR  <span>v 1.0 b</span></h3>
-            
-            <label>Minimal SP:</label>
-            <input type="text" class="settings_input" id="min_sp" value="10000"/>
-            <div class="copyright">&copy; Whalesonar by <a href="https://steemit.com/@elviento">@elviento</a></div>
-        </div>    
+            <h3>Whale Sonar  <span>v 1.0.1 b</span></h3>
+            <div class="row">
+                <label>My nickname:</label>
+                <input type="text" class="settings_input" id="name" value=""/>
+            </div>
+            <div class="row">
+                <label>Minimal curator's SP:</label>
+                <input type="text" class="settings_input" id="min_sp" value=""/>
+            </div>
+            <div class="row">
+                <label>Blacklist (separated by ','):</label>
+                <input type="text" class="settings_input" id="black_list" value=""/>
+            </div>
+            <div class="row mt-15">
+                <input type="checkbox" class="checkbox" id="sound_on" />
+                <label for="sound_on">Sound</label>
+            </div>
+            <div class="row mt-20">
+                <input type="checkbox" class="checkbox" id="bg_on" />
+                <label for="bg_on">Background</label>
+            </div>
+
+            <div class="copyright">&copy; Whalesonar by <a href="https://golos.io/@elviento">@elviento</a></div>
+        </div>
+        <!--div class="creature0">
+            <img src="./img/whale_small.gif" alt="Кит" width="220px">
+            <span class='voter-title is-right-side'>Синий кит</span>
+        </div-->
         <img src="./img/sonar.gif" width="60px" class="sonar-pic"/>
-       <audio id="small_whale" src="./sounds/whale_small.wav"></audio>
+        <audio id="small_whale" src="./sounds/whale_small.wav"></audio>
         <audio id="dolphin" src="./sounds/dolphin_low_sound.wav"></audio>
         <audio id="orca" src="./sounds/orca_low_sound.wav"></audio>
     </body>

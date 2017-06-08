@@ -1,4 +1,4 @@
-# Whalesonar
+# Whale Sonar
 Web application for observation of curation activity based on SteemIt blockchain.
 
 SteemIt is the ocean, ocean of blockchain. 
