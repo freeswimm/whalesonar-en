@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Whale Sonar v.1.0.2 beta</title>
+        <title>Whale Sonar v.1.0.3 beta</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Cache-control" content="no-cache">
         <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="Expires" content="0">
         <script type="text/javascript" src="./js/jquery311.min.js"></script>        
         <script type="text/javascript" src="./js/cookie.min.js"></script>        
+        <script type="text/javascript" src="./js/moment.min.js"></script>        
+       
         <script src="./js/steem.min.js"></script>
         <script src="./js/main.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/styles.min.css"/>
@@ -18,7 +20,7 @@
             <div id="minimize"> <span class="slide-button"></span></div>             
             <div class="wrapper">    
             <h3>Whale Sonar</h3>
-            <div class="vers">v 1.0.2 b</div>
+            <div class="vers">v 1.0.3 b</div>
             <div class="row">
                 <label>My nickname:</label>
                 <input type="text" class="settings_input" id="name" value=""/>
@@ -41,24 +43,12 @@
             </div>
             <div class="row mt-20">
                 <input type="checkbox" class="checkbox" id="balloon_on" />
-                <label for="balloon_on">Bubbles</label>
+                <label for="balloon_on">Balloons</label>
             </div>
             <div class="copyright">&copy; Whalesonar by <a href="https://golos.io/@elviento">@elviento</a></div>
             </div>
         </div>
-        <!--div class="creature0">
-            <img src="./img/whale_small.gif" alt="Кит" width="220px">
-            <span class='voter-title is-right-side switch-balloon'>Goood curator</span>
-            <svg class='title-curve-line switch-balloon'>
-              <path fill='none' stroke='#99b' stroke-width='1' d='M30,0 Q30,50 60,60' />
-            </svg>            
-            <span class='author-balloon switch-balloon is-right-side blue-bg'><span>Author</span></span>            
-            <div class="sp-title switch-balloon">
-                <span>100%</span>
-            </div>
-            <span class="ballon-nippel switch-balloon"></span>
-            <div class="author-link-overlay switch-balloon" data-link="http://steemit.com/"></div>
-        </div-->
+        
         <img src="./img/sonar.gif" width="60px" class="sonar-pic"/>
         <audio id="whale1" src="./sounds/whale_sound1.wav"></audio>
         <audio id="dolphin1" src="./sounds/dolphin_sound1.wav"></audio>

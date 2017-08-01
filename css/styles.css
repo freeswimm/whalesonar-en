@@ -21,7 +21,13 @@ html, body {
 
 .creature{
     position: absolute;
-    z-index: 10;  
+    z-index: 10; 
+}
+.creature:hover {
+     -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important;
+     animation-play-state: paused !important;
 }
 .voter-title{
     position: absolute;
@@ -39,13 +45,13 @@ html, body {
 }
 .title-curve-line{
     position: absolute;
-    top: -11px;
+    top: -6px;
     left: 17px;
     z-index: -1; 
 }
 .sp-title{    
     position: absolute;
-    top: -80px;
+    top: -75px;
     left: 0px;
     font-size: 22px;
     z-index: 12;
@@ -59,17 +65,18 @@ html, body {
     position: absolute;
     top: -100px;
     left: 0px;
-    z-index: 15; 
+    z-index: 10; 
     width: 90px; 
     height: 90px;
     cursor: pointer;
     border-radius: 45px; 
+    z-index: 15;
 }
 .author-balloon{
 
     position: absolute;
     display: block;
-    top: -100px;
+    top: -97px;
     left: 0px;
     z-index: 12; 
     width: 90px; 
@@ -86,7 +93,7 @@ html, body {
 .ballon-nippel{
     position: absolute;
     display: block;
-    top: -18px;
+    top: -14px;
     left: 42px;
     z-index: 10; 
     border: 5px solid transparent;
@@ -121,7 +128,7 @@ html, body {
 .author-balloon span{
     width: 70%;
     display: block;
-    margin: 47px auto;
+    margin: 49px auto;
     text-align: center;
     word-wrap: break-word;
     color: white;
@@ -150,11 +157,14 @@ html, body {
 .creature0 {
     position: absolute;
     z-index: 10; 
-    animation:swim0 30s infinite linear;   
-    -moz-animation:swim0 30s infinite linear; 
-    -webkit-animation:swim0 30s infinite linear;
+    animation:swim 30s 1 ease-in-out;    
 }
-
+.creature0:hover {
+     -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important;
+     animation-play-state: paused !important;
+}
 @keyframes swim0{
     from{
         right:50%;
@@ -166,7 +176,7 @@ html, body {
     }
 }
 
-/*@keyframes swim{
+@keyframes swim{
     from{
         right:-5%;
         top:82%;    
@@ -186,7 +196,7 @@ html, body {
         top:82%;    
         transform:scaleX(-1);
     }
-}*/
+}
 
 .copyright{
     margin-top: 20px;
@@ -276,6 +286,58 @@ html, body {
 
 .hidden{
     display: none;
+}
+.nowrap{
+    white-space: nowrap;
+}
+/*--- TOOLTIPS ---*/
+.tooltip{
+    position: absolute;
+    left: 0;
+    display: none;
+    color: white;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgba(10, 50, 150, 0.45);
+    font-family: Courier New, monospace;   
+    z-index:1000;   
+}
+
+.tooltip table{
+    width: 100%;   
+}
+.tooltip table td{
+    text-indent: 3px;
+}
+.tooltip table .hd{
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);   
+    padding-top: 6px;
+    font-size: 15px;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: rgba(31, 112, 237, 0.35);
+}
+.tooltip table td span{
+    white-space: nowrap
+}
+.tooltip .voter, .tooltip .author{
+    font-size: 15px;
+    font-weight: bold;
+    color: #e0bd00;
+     cursor: pointer;
+}
+.tooltip .coins{
+    color: #9fd468;
+    font-weight: bold;
+    font-size: 15px;
+}
+.tooltip .percent{
+    color: #8CC4FF;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 
